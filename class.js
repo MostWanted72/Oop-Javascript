@@ -9,6 +9,10 @@ class PersonCl {
     console.log(2030 - this.birthYear);
   }
 
+  static hey() {
+    console.log('hey there')
+  }
+
   get age() {
     return 2030 - this.birthYear;
   }
@@ -29,6 +33,8 @@ class PersonCl {
 const rohan = new PersonCl('Rohan bhatam', 2004);
 console.log(rohan)
 rohan.calAge()
+
+PersonCl.hey()
 
 // classes are not hoisted
 // classess are just special kind of functions

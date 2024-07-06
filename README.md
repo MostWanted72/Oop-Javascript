@@ -32,7 +32,7 @@ Polymorphism
 - adding methods or variables if better under prototype property if we want to use it accross all the time.
 
 # Prototype Chain
-- when trye to access some method or property of object it first looks on it's own proerty and then it's prototype property.
-- if not found, it then looks at own propereties of prototype and prototype of prototype.
+- when trying to access some method or property of object it first looks on it's own proerty and then it's prototype property.
+- if not found, it then looks at prototype of prototype.
 - untill the end if it finds the property then it is used.
 - example while hasOwnProperty() method which is assigned to Object prototype but it can be used with any other object like String()
