@@ -44,3 +44,14 @@ Person.prototype.species = 'Homo Sapiens';
 console.log(rohan.species);  // 'Homo Sapiens'
 
 console.log(String().__proto__)
+
+const arr = [1,2, 3, 4, 2, 5];  // same as new Array()
+console.log(arr.__proto__);
+console.log(arr.__proto__ === Array.prototype)
+
+Array.prototype.unique = function() {
+  return [...new Set(this)]
+}
+
+// this makes javascript so powerfull
+console.log(arr.unique())
