@@ -42,3 +42,5 @@ console.log(rohan.__proto__)  // proto
 Person.prototype.species = 'Homo Sapiens';
 
 console.log(rohan.species);  // 'Homo Sapiens'
+
+console.log(String().__proto__)
